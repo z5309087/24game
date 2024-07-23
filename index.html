@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>24 Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="start-page">
+        <h1>Welcome to the 24 Game</h1>
+        <p>The objective of the game is to manipulate four given numbers using basic arithmetic operations (addition, subtraction, multiplication, division) to reach the number 24.</p>
+        <p>Rules:</p>
+        <ul>
+            <li>You must use each of the four numbers exactly once.</li>
+            <li>You can use the operations in any order.</li>
+            <li>If you successfully reach 24, a new set of numbers will be presented.</li>
+            <li>Your score will increase each time you successfully reach 24.</li>
+        </ul>
+        <div>
+            <label for="username">Enter your username: </label>
+            <input type="text" id="username" name="username" required>
+        </div>
+        <button id="start-game-button">Start Game</button>
+        <button id="view-leaderboard-button">View Leaderboard</button>
+        <div id="leaderboard" style="display: none;">
+            <h2>Leaderboard</h2>
+            <ul id="leaderboard-list"></ul>
+        </div>
+    </div>
+    <div id="game" style="display:none;">
+        <div class="score">Score: <span id="score">0</span></div>
+        <div class="timer">Time: <span id="time">60</span> seconds</div>
+        <div class="numbers" id="numbers-container"></div>
+        <div class="operations">
+            <button class="operation" id="add">+</button>
+            <button class="operation" id="subtract">-</button>
+            <button class="operation" id="multiply">*</button>
+            <button class="operation" id="divide">/</button>
+        </div>
+        <div id="result"></div>
+        <button id="reset">Reset</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
