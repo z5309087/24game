@@ -1,0 +1,22 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+#game {
+    text-align: center;
+}
+
+.numbers, .operations {
+    margin: 20px;
+}
+
+.number, .operation {
+    margin: 10px;
+    padding: 20px;
+    font-size: 24px;
+}
